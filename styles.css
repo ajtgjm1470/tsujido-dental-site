@@ -1,6 +1,4 @@
-/* =========================
    Base
-   ========================= */
 *,
 *::before,
 *::after {
@@ -42,9 +40,7 @@ table {
   width: 100%;
 }
 
-/* =========================
    Layout helpers
-   ========================= */
 /* ====== LAYOUT RESET ====== */
 .site-wrapper {
   width: 100%;
@@ -102,9 +98,7 @@ table {
   color: #607374;
 }
 
-/* =========================
    Header
-   ========================= */
 .site-header {
   position: sticky;
   top: 0;
@@ -184,9 +178,7 @@ table {
   color: #7b8b8b;
 }
 
-/* =========================
    Buttons
-   ========================= */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -254,9 +246,7 @@ table {
   opacity: 0.9;
 }
 
-/* =========================
    Hero
-   ========================= */
 .hero {
   position: relative;
   min-height: 80vh;
@@ -378,9 +368,7 @@ table {
   color: #607374;
 }
 
-/* =========================
    Concept
-   ========================= */
 .concept {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr);
@@ -414,9 +402,7 @@ table {
   margin-bottom: 0;
 }
 
-/* =========================
    Cards / Feature
-   ========================= */
 .cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -442,9 +428,7 @@ table {
   color: #546164;
 }
 
-/* =========================
    MENU grid
-   ========================= */
 .grid--menu {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -478,9 +462,7 @@ table {
   color: #546164;
 }
 
-/* =========================
    Doctor
-   ========================= */
 .doctor {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr);
@@ -530,9 +512,7 @@ table {
   margin-bottom: 0;
 }
 
-/* =========================
    Flow
-   ========================= */
 .flow {
   list-style: none;
   padding: 0;
@@ -574,9 +554,7 @@ table {
   color: #546164;
 }
 
-/* =========================
    FAQ
-   ========================= */
 .faq {
   max-width: 800px;
   margin: 0 auto;
@@ -626,9 +604,7 @@ table {
   color: #546164;
 }
 
-/* =========================
    Access
-   ========================= */
 .access {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
@@ -673,9 +649,7 @@ table {
   min-height: 280px;
 }
 
-/* =========================
    CTA
-   ========================= */
 .cta {
   background: linear-gradient(135deg, #f5fbf8, #dbeee4);
 }
@@ -723,9 +697,7 @@ table {
   color: rgba(235, 247, 242, 0.95);
 }
 
-/* =========================
    Footer
-   ========================= */
 .site-footer {
   background: #162520;
   color: rgba(235, 245, 241, 0.9);
@@ -769,9 +741,7 @@ table {
   color: #8ea19c;
 }
 
-/* =========================
    Floating LINE button
-   ========================= */
 .floating-line {
   position: fixed;
   right: 16px;
@@ -797,9 +767,7 @@ table {
   box-shadow: 0 18px 32px rgba(0, 0, 0, 0.3);
 }
 
-/* =========================
    Scroll animation
-   ========================= */
 [data-scroll] {
   opacity: 0;
   transform: translateY(18px);
@@ -811,9 +779,7 @@ table {
   transform: translateY(0);
 }
 
-/* =========================
    Responsive
-   ========================= */
 @media (max-width: 960px) {
   .site-header__nav {
     display: none;

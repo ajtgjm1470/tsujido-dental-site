@@ -1,6 +1,4 @@
-/* =========================
    Base & Reset
-   ========================= */
 *,
 *::before,
 *::after {
@@ -38,9 +36,7 @@ a:hover {
   opacity: 0.85;
 }
 
-/* =========================
    Color Tokens
-   ========================= */
 :root {
   --main-navy: #0f1c2e;
   --deep-navy: #0b1523;
@@ -57,9 +53,7 @@ a:hover {
   --white: #ffffff;
 }
 
-/* =========================
    Typography
-   ========================= */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: "Noto Serif JP", serif;
@@ -82,9 +76,7 @@ p {
 
 p:last-child { margin-bottom: 0; }
 
-/* =========================
    Layout
-   ========================= */
 .site-wrapper {
   width: 100%;
 }
@@ -171,9 +163,7 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.8;
 }
 
-/* =========================
    Buttons
-   ========================= */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -274,9 +264,7 @@ p:last-child { margin-bottom: 0; }
 
 .btn .icon { flex-shrink: 0; }
 
-/* =========================
    Cards
-   ========================= */
 .card {
   background: var(--white);
   border-radius: 16px;
@@ -320,22 +308,16 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.8;
 }
 
-/* =========================
    Grid
-   ========================= */
 .grid { display: grid; gap: 24px; }
 .grid--2 { grid-template-columns: repeat(2, 1fr); }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
 
-/* =========================
    Utilities
-   ========================= */
 .text-center { text-align: center; }
 .section-cta { text-align: center; margin-top: 48px; }
 
-/* =========================
    Brand Message
-   ========================= */
 .brand-message {
   position: relative;
   background: linear-gradient(180deg, #f6f6f4 0%, #ffffff 100%);
@@ -423,9 +405,7 @@ p:last-child { margin-bottom: 0; }
   .brand-text .strong { font-size: 17px; padding-left: 12px; }
 }
 
-/* =========================
    Scroll Animation
-   ========================= */
 [data-scroll] {
   opacity: 0;
   transform: translateY(20px);
@@ -436,9 +416,7 @@ p:last-child { margin-bottom: 0; }
   transform: translateY(0);
 }
 
-/* =========================
    Responsive
-   ========================= */
 @media (max-width: 1024px) {
   .section { padding: 80px 0; }
   .grid--3 { grid-template-columns: repeat(2, 1fr); }
@@ -473,9 +451,7 @@ p:last-child { margin-bottom: 0; }
     font-size: 13px;
   }
 }
-/* =========================
    Principles / First Visit
-   ========================= */
 .principles-section {
   background: linear-gradient(to bottom, #f5f5f3, #ffffff);
   padding: 100px 20px;
@@ -555,9 +531,7 @@ p:last-child { margin-bottom: 0; }
   color: rgba(255,255,255,0.92);
 }
 
-/* =========================
    Top Structure Reset
-   ========================= */
 .hero-section {
   background: #f3f2ef;
   padding: 120px 0;
@@ -644,9 +618,7 @@ p:last-child { margin-bottom: 0; }
   }
 }
 
-/* =========================
    Philosophy Page
-   ========================= */
 .philosophy-narrow {
   max-width: 820px;
 }
