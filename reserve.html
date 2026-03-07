@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>ネット予約｜藤沢辻堂歯科</title>
+    <meta
+      name="description"
+      content="藤沢辻堂歯科のネット予約ページです。ご希望の日時と診療内容をお選びいただき、お気軽にご予約ください。"
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://example.com/reserve.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/" class="site-header__brand">
+          <span class="site-header__logo">藤沢辻堂歯科</span>
+          <span class="site-header__tagline"
+            >Fujisawa Tsujido Dental Clinic</span
+          >
+        </a>
+        <nav class="site-header__nav" aria-label="メインメニュー">
+          <a href="/">ホーム</a>
+          <a href="/philosophy.html">私たちの考え</a>
+          <a href="/first-visit/">初診の流れ</a>
+          <a href="/faq/">よくある質問</a>
+          <a href="/access/">アクセス</a>
+        </nav>
+        <div class="site-header__actions cta-group">
+          <a
+            href="https://lin.ee/xxxxxxxx"
+            class="btn btn--primary btn--sm line-button cta-button cta-line"
+            target="_blank"
+            rel="noopener noreferrer"
+          >LINEで予約</a>
+          <a href="/reserve.html" class="cta-button cta-web">WEB予約</a>
+          <a href="tel:0466000000" class="site-header__tel">
+            <svg
+              class="icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+              />
+            </svg>
+            0466-00-0000
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="wide-container">
+          <h1 class="page-header__title">ネット予約</h1>
+          <p class="page-header__lead">
+            以下のフォームからご希望の日時をお知らせください。<br />
+            折り返しお電話またはメールにてご連絡いたします。
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wide-container">
+          <!-- 将来的に外部予約システムURLに差し替え可能 -->
+          <form
+            id="reserve-form"
+            class="form-wrapper"
+            action="#"
+            method="post"
+            novalidate
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">
+                  お名前 <span class="required">必須</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="例：山田 太郎"
+                  required
+                />
+                <p class="form-error" id="name-error">お名前を入力してください</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="kana">
+                  フリガナ <span class="required">必須</span>
+                </label>
+                <input
+                  type="text"
+                  id="kana"
+                  name="kana"
+                  class="form-input"
+                  placeholder="例：ヤマダ タロウ"
+                  required
+                />
+                <p class="form-error" id="kana-error">フリガナを入力してください</p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="tel">
+                  電話番号 <span class="required">必須</span>
+                </label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  class="form-input"
+                  placeholder="例：090-1234-5678"
+                  required
+                />
+                <p class="form-error" id="tel-error">電話番号を入力してください</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">
+                  メールアドレス <span class="required">必須</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="例：example@mail.com"
+                  required
+                />
+                <p class="form-error" id="email-error">正しいメールアドレスを入力してください</p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="date1">
+                  ご希望日時（第1希望） <span class="required">必須</span>
+                </label>
+                <input
+                  type="datetime-local"
+                  id="date1"
+                  name="date1"
+                  class="form-input"
+                  required
+                />
+                <p class="form-error" id="date1-error">第1希望の日時を選択してください</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="date2">
+                  ご希望日時（第2希望）
+                </label>
+                <input
+                  type="datetime-local"
+                  id="date2"
+                  name="date2"
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="menu">
+                診療内容
+              </label>
+              <select id="menu" name="menu" class="form-select">
+                <option value="">選択してください</option>
+                <option value="general">一般歯科（むし歯・歯周病）</option>
+                <option value="checkup">定期検診・クリーニング</option>
+                <option value="child">小児歯科</option>
+                <option value="preventive">予防歯科</option>
+                <option value="esthetic">審美歯科・ホワイトニング</option>
+                <option value="visit">訪問診療のご相談</option>
+                <option value="other">その他・相談したい</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">
+                ご相談内容・ご質問
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="気になっている症状やご希望があればお書きください"
+              ></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn--primary btn--lg">
+                予約を申し込む
+              </button>
+            </div>
+          </form>
+
+          <!-- 送信完了表示 -->
+          <div
+            id="reserve-complete"
+            class="form-wrapper"
+            style="display: none; text-align: center"
+          >
+            <h2 style="margin-bottom: 16px">
+              ご予約ありがとうございます
+            </h2>
+            <p>
+              お送りいただいた内容を確認し、折り返しご連絡いたします。<br />
+              しばらくお待ちください。
+            </p>
+            <div style="margin-top: 32px">
+              <a href="/" class="btn btn--outline">トップページへ戻る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__main">
+          <div class="site-footer__brand">
+            <div class="site-footer__logo">藤沢辻堂歯科</div>
+            <div class="site-footer__address">
+              〒251-0047<br />
+              神奈川県藤沢市辻堂1-1-1<br />
+              JR辻堂駅東口より徒歩5分
+            </div>
+          </div>
+          <nav class="site-footer__nav">
+            <div class="site-footer__nav-title">診療内容</div>
+            <a href="/menu/general.html">一般歯科</a>
+            <a href="/menu/child.html">小児歯科</a>
+            <a href="/menu/preventive.html">予防歯科</a>
+            <a href="/menu/esthetic.html">審美歯科</a>
+            <a href="/menu/visit.html">訪問診療</a>
+          </nav>
+          <div class="site-footer__hours">
+            <div class="site-footer__nav-title">診療時間</div>
+            <p>
+              平日：9:30〜13:00 / 14:30〜19:00<br />
+              土曜：9:30〜13:00 / 14:30〜17:00<br />
+              休診：木曜・日曜・祝日
+            </p>
+          </div>
+        </div>
+        <div class="site-footer__copy">
+          <small>&copy; 2025 藤沢辻堂歯科 All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("reserve-form");
+        const complete = document.getElementById("reserve-complete");
+        if (!form || !complete) return;
+
+        const requiredFields = form.querySelectorAll("[required]");
+
+        function validateField(field) {
+          const errorEl = document.getElementById(field.id + "-error");
+          let valid = true;
+
+          if (!field.value.trim()) {
+            valid = false;
+          } else if (field.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
+            valid = false;
+          }
+
+          field.classList.toggle("is-error", !valid);
+          if (errorEl) errorEl.classList.toggle("is-visible", !valid);
+          return valid;
+        }
+
+        requiredFields.forEach((field) => {
+          field.addEventListener("blur", () => validateField(field));
+          field.addEventListener("input", () => {
+            if (field.classList.contains("is-error")) validateField(field);
+          });
+        });
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          let allValid = true;
+
+          requiredFields.forEach((field) => {
+            if (!validateField(field)) allValid = false;
+          });
+
+          if (!allValid) return;
+
+          form.style.display = "none";
+          complete.style.display = "block";
+          window.scrollTo({ top: complete.offsetTop - 120, behavior: "smooth" });
+        });
+      });
+    </script>
+  </body>
+</html>

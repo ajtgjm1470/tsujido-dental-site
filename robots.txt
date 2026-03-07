@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# サイトマップの場所
+Sitemap: https://example.com/sitemap.xml
+
+# 必要に応じて特定のディレクトリを除外
+# Disallow: /admin/
+# Disallow: /private/
