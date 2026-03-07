@@ -1,24 +1,14 @@
 /* =========================
-<<<<<<< HEAD
    Header – 上質グレージュ締め
-=======
-   Header
->>>>>>> d8d7168 (first commit)
    ========================= */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-<<<<<<< HEAD
   background: linear-gradient(to bottom, #ece8df 0%, #e6e2d8 100%);
   border-bottom: 1px solid rgba(0,0,0,0.05);
   box-shadow: 0 18px 50px rgba(0,0,0,0.06);
   transition: box-shadow 0.3s ease;
-=======
-  backdrop-filter: blur(14px);
-  background: rgba(255,255,255,0.97);
-  border-bottom: 1px solid var(--color-border);
->>>>>>> d8d7168 (first commit)
 }
 
 .site-header__inner {
@@ -26,34 +16,23 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-<<<<<<< HEAD
   max-width: 1200px;
   margin: 0 auto;
   padding: 24px 40px;
-=======
-  width: min(1100px, 100% - 48px);
-  margin-inline: auto;
-  padding: 12px 0;
->>>>>>> d8d7168 (first commit)
 }
 
 .site-header__brand {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   gap: 3px;
   font-family: "Noto Serif JP", serif;
   font-weight: 500;
   letter-spacing: 0.08em;
   color: #111111;
-=======
-  gap: 1px;
->>>>>>> d8d7168 (first commit)
 }
 
 .site-header__logo {
   font-family: "Noto Serif JP", serif;
-<<<<<<< HEAD
   font-size: 22px;
   font-weight: 500;
   color: #111111;
@@ -66,23 +45,10 @@
   font-size: 12px;
   color: #777777;
   letter-spacing: 0.06em;
-=======
-  font-size: 19px;
-  font-weight: 700;
-  color: var(--color-text);
-  letter-spacing: 0.05em;
-}
-
-.site-header__tagline {
-  font-size: 10px;
-  color: var(--color-text-muted);
-  letter-spacing: 0.1em;
->>>>>>> d8d7168 (first commit)
 }
 
 .site-header__nav {
   display: flex;
-<<<<<<< HEAD
   gap: 32px;
   font-weight: 500;
 }
@@ -106,30 +72,14 @@
 .site-header__nav a:hover {
   opacity: 1;
   color: var(--main-navy);
-=======
-  gap: 24px;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.site-header__nav a {
-  position: relative;
-  color: var(--color-text);
-  padding-bottom: 4px;
->>>>>>> d8d7168 (first commit)
 }
 
 .site-header__nav a::after {
   content: "";
   position: absolute;
   left: 0; bottom: 0;
-<<<<<<< HEAD
   width: 0; height: 1px;
   background: var(--main-navy);
-=======
-  width: 0; height: 2px;
-  background: var(--color-green-dark);
->>>>>>> d8d7168 (first commit)
   transition: width 0.3s ease;
 }
 
@@ -141,7 +91,6 @@
 .site-header__actions {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   gap: 14px;
 }
 
@@ -152,16 +101,12 @@
 .site-header .btn--primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 40px rgba(15,28,46,0.35);
-=======
-  gap: 10px;
->>>>>>> d8d7168 (first commit)
 }
 
 .site-header__tel {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-<<<<<<< HEAD
   font-size: 15px;
   font-weight: 500;
   color: #444444;
@@ -187,39 +132,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
-=======
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--color-text);
-  white-space: nowrap;
-}
-
-/* =========================
-   Footer
-   ========================= */
-.site-footer {
-  background: var(--color-text);
-  color: rgba(255,255,255,0.85);
-  padding: 56px 0 24px;
-}
-
-.site-footer__inner {
-  width: min(1100px, 100% - 48px);
-  margin-inline: auto;
->>>>>>> d8d7168 (first commit)
 }
 
 .site-footer__main {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   gap: 48px;
-<<<<<<< HEAD
   margin-bottom: 40px;
   padding-bottom: 40px;
-=======
-  margin-bottom: 36px;
-  padding-bottom: 36px;
->>>>>>> d8d7168 (first commit)
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -227,11 +147,7 @@
   font-family: "Noto Serif JP", serif;
   font-size: 20px;
   font-weight: 700;
-<<<<<<< HEAD
   color: var(--white);
-=======
-  color: #fff;
->>>>>>> d8d7168 (first commit)
   letter-spacing: 0.05em;
   margin-bottom: 12px;
 }
@@ -239,11 +155,7 @@
 .site-footer__address {
   font-size: 13px;
   line-height: 1.8;
-<<<<<<< HEAD
   color: rgba(255,255,255,0.55);
-=======
-  color: rgba(255,255,255,0.65);
->>>>>>> d8d7168 (first commit)
 }
 
 .site-footer__nav {
@@ -256,63 +168,37 @@
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 4px;
-<<<<<<< HEAD
   color: var(--gold-accent);
   letter-spacing: 0.1em;
-=======
-  color: #fff;
->>>>>>> d8d7168 (first commit)
 }
 
 .site-footer__nav a {
   font-size: 13px;
-<<<<<<< HEAD
   color: rgba(255,255,255,0.5);
 }
 .site-footer__nav a:hover { color: var(--white); opacity: 1; }
-=======
-  color: rgba(255,255,255,0.6);
-}
-.site-footer__nav a:hover { color: #fff; opacity: 1; }
->>>>>>> d8d7168 (first commit)
 
 .site-footer__hours {
   font-size: 13px;
   line-height: 1.8;
-<<<<<<< HEAD
   color: rgba(255,255,255,0.55);
-=======
-  color: rgba(255,255,255,0.65);
->>>>>>> d8d7168 (first commit)
 }
 
 .site-footer__copy {
   text-align: center;
   font-size: 11px;
-<<<<<<< HEAD
   color: rgba(255,255,255,0.3);
 }
 
 /* =========================
    HERO (Navy overlay)
-=======
-  color: rgba(255,255,255,0.4);
-}
-
-/* =========================
-   HERO
->>>>>>> d8d7168 (first commit)
    ========================= */
 .hero {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   color: var(--white);
-=======
-  color: #fff;
->>>>>>> d8d7168 (first commit)
   overflow: hidden;
 }
 
@@ -328,11 +214,7 @@
 .hero__overlay {
   position: absolute;
   inset: 0;
-<<<<<<< HEAD
   background: rgba(15,28,46,0.45);
-=======
-  background: rgba(0, 0, 0, 0.55);
->>>>>>> d8d7168 (first commit)
 }
 
 .hero__badge {
@@ -340,65 +222,39 @@
   top: 24px;
   right: 24px;
   z-index: 2;
-<<<<<<< HEAD
   background: rgba(255,255,255,0.92);
   color: var(--main-navy);
   padding: 8px 18px;
   border-radius: 20px;
-=======
-  background: rgba(255,255,255,0.85);
-  color: var(--color-text);
-  padding: 8px 20px;
-  border-radius: 999px;
->>>>>>> d8d7168 (first commit)
   font-family: "Noto Sans JP", sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.04em;
-<<<<<<< HEAD
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-=======
->>>>>>> d8d7168 (first commit)
 }
 
 .hero__content {
   position: relative;
   z-index: 1;
-<<<<<<< HEAD
   max-width: 1200px;
   margin: 0 auto;
   padding: 160px 40px 100px;
-=======
-  width: min(1100px, 100% - 48px);
-  margin: 0 auto;
-  padding: 160px 0 100px;
->>>>>>> d8d7168 (first commit)
 }
 
 .hero__title {
   font-family: "Noto Serif JP", serif;
-<<<<<<< HEAD
   font-size: clamp(28px, 5vw, 42px);
   line-height: 1.4;
   margin-bottom: 28px;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: var(--white);
-=======
-  font-size: clamp(28px, 5vw, 46px);
-  line-height: 1.4;
-  margin-bottom: 28px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: #fff;
->>>>>>> d8d7168 (first commit)
 }
 
 .hero__sub {
   font-size: clamp(15px, 1.6vw, 18px);
   line-height: 2;
   margin-bottom: 16px;
-<<<<<<< HEAD
   color: rgba(255,255,255,0.88);
   letter-spacing: 0.04em;
 }
@@ -408,29 +264,19 @@
   margin-top: 20px;
   line-height: 1.8;
   max-width: 640px;
-=======
-  color: rgba(255,255,255,0.95);
-  letter-spacing: 0.06em;
->>>>>>> d8d7168 (first commit)
 }
 
 .hero__mini {
   font-size: 14px;
   line-height: 1.8;
-<<<<<<< HEAD
   margin-bottom: 44px;
   color: rgba(255,255,255,0.6);
-=======
-  margin-bottom: 40px;
-  color: rgba(255,255,255,0.7);
->>>>>>> d8d7168 (first commit)
   max-width: 460px;
 }
 
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
   gap: 16px;
 }
 
@@ -439,17 +285,6 @@
    ========================= */
 .concept-intro {
   padding: 120px 0;
-=======
-  gap: 12px;
-}
-
-/* =========================
-   CONCEPT INTRO (恐さの分解)
-   ========================= */
-.concept-intro {
-  padding: 120px 0;
-  background: var(--color-bg-alt);
->>>>>>> d8d7168 (first commit)
 }
 
 .concept-intro__inner {
@@ -463,29 +298,17 @@
   font-size: clamp(20px, 2.8vw, 28px);
   line-height: 1.6;
   margin-bottom: 32px;
-<<<<<<< HEAD
   color: var(--main-navy);
-=======
-  color: var(--color-text);
->>>>>>> d8d7168 (first commit)
 }
 
 .concept-intro__text {
   font-size: 15px;
   line-height: 2.2;
-<<<<<<< HEAD
   color: var(--text-mid);
 }
 
 /* =========================
    THREE PRINCIPLES
-=======
-  color: var(--color-text-light);
-}
-
-/* =========================
-   THREE PRINCIPLES (怖くない三原則)
->>>>>>> d8d7168 (first commit)
    ========================= */
 .principles {
   display: grid;
@@ -504,16 +327,10 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-<<<<<<< HEAD
   background: var(--white);
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   margin-bottom: 24px;
   color: var(--gold-accent);
-=======
-  background: var(--color-bg-alt);
-  margin-bottom: 24px;
-  color: var(--color-green-dark);
->>>>>>> d8d7168 (first commit)
 }
 
 .principle__title {
@@ -521,53 +338,31 @@
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 14px;
-<<<<<<< HEAD
   color: var(--main-navy);
-=======
-  color: var(--color-text);
->>>>>>> d8d7168 (first commit)
 }
 
 .principle__text {
   font-size: 14px;
   line-height: 1.9;
-<<<<<<< HEAD
   color: var(--text-mid);
-=======
-  color: var(--color-text-light);
->>>>>>> d8d7168 (first commit)
   max-width: 280px;
   margin: 0 auto;
 }
 
 /* =========================
-<<<<<<< HEAD
    GREETING
    ========================= */
 .greeting-row {
   display: grid;
   grid-template-columns: 340px 1fr;
   gap: 48px;
-=======
-   GREETING (院長メッセージ)
-   ========================= */
-.greeting-row {
-  display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 56px;
->>>>>>> d8d7168 (first commit)
   align-items: center;
 }
 
 .greeting-row__image img {
   width: 100%;
-<<<<<<< HEAD
   border-radius: 16px;
   box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-=======
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
->>>>>>> d8d7168 (first commit)
 }
 
 .greeting-row__body {
@@ -579,27 +374,18 @@
   font-size: clamp(20px, 2.5vw, 26px);
   line-height: 1.55;
   margin-bottom: 24px;
-<<<<<<< HEAD
   color: var(--main-navy);
-=======
-  color: var(--color-text);
->>>>>>> d8d7168 (first commit)
 }
 
 .greeting-row__text {
   font-size: 15px;
   line-height: 2;
-<<<<<<< HEAD
   color: var(--text-mid);
-=======
-  color: var(--color-text-light);
->>>>>>> d8d7168 (first commit)
   margin: 0 0 1.2em;
 }
 .greeting-row__text:last-of-type { margin-bottom: 28px; }
 
 /* =========================
-<<<<<<< HEAD
    MENU SECTION
    ========================= */
 .menu-section { padding: 140px 0; }
@@ -693,18 +479,6 @@
 
 /* =========================
    EMOTIONAL BANNER
-=======
-   MENU SCROLL (診療メニュー)
-   ========================= */
-.menu-scroll {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-/* =========================
-   EMOTIONAL BANNER (食べる喜び)
->>>>>>> d8d7168 (first commit)
    ========================= */
 .emotional-banner {
   position: relative;
@@ -727,22 +501,14 @@
 .emotional-banner__overlay {
   position: absolute;
   inset: 0;
-<<<<<<< HEAD
   background: rgba(15,28,46,0.4);
-=======
-  background: rgba(0,0,0,0.42);
->>>>>>> d8d7168 (first commit)
 }
 
 .emotional-banner__content {
   position: relative;
   z-index: 1;
   text-align: center;
-<<<<<<< HEAD
   color: var(--white);
-=======
-  color: #fff;
->>>>>>> d8d7168 (first commit)
   padding: 40px 24px;
 }
 
@@ -752,33 +518,20 @@
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 16px;
-<<<<<<< HEAD
   color: var(--white);
   letter-spacing: 0.05em;
-=======
-  color: #fff;
-  letter-spacing: 0.04em;
->>>>>>> d8d7168 (first commit)
 }
 
 .emotional-banner__text {
   font-size: 15px;
   line-height: 1.9;
-<<<<<<< HEAD
   color: rgba(255,255,255,0.8);
-=======
-  color: rgba(255,255,255,0.85);
->>>>>>> d8d7168 (first commit)
   max-width: 500px;
   margin: 0 auto;
 }
 
 /* =========================
-<<<<<<< HEAD
    COMMUNITY
-=======
-   COMMUNITY (地域・家族・予防)
->>>>>>> d8d7168 (first commit)
    ========================= */
 .community-card {
   text-align: center;
@@ -788,13 +541,8 @@
   width: 100%;
   height: 220px;
   object-fit: cover;
-<<<<<<< HEAD
   border-radius: 16px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.06);
-=======
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
->>>>>>> d8d7168 (first commit)
   margin-bottom: 20px;
 }
 
@@ -802,39 +550,23 @@
   font-family: "Noto Serif JP", serif;
   font-size: 18px;
   margin-bottom: 10px;
-<<<<<<< HEAD
   color: var(--main-navy);
-=======
-  color: var(--color-text);
->>>>>>> d8d7168 (first commit)
 }
 
 .community-card__text {
   font-size: 14px;
   line-height: 1.9;
-<<<<<<< HEAD
   color: var(--text-mid);
-=======
-  color: var(--color-text-light);
->>>>>>> d8d7168 (first commit)
   max-width: 320px;
   margin: 0 auto;
 }
 
 /* =========================
-<<<<<<< HEAD
    CTA FINAL (Navy)
    ========================= */
 .cta-final {
   background: var(--main-navy);
   color: var(--white);
-=======
-   CTA FINAL (予約導線)
-   ========================= */
-.cta-final {
-  background: var(--color-green-dark);
-  color: #fff;
->>>>>>> d8d7168 (first commit)
   padding: 100px 0;
 }
 
@@ -848,43 +580,27 @@
   font-family: "Noto Serif JP", serif;
   font-size: clamp(22px, 3vw, 30px);
   margin-bottom: 20px;
-<<<<<<< HEAD
   color: var(--white);
-=======
-  color: #fff;
->>>>>>> d8d7168 (first commit)
   line-height: 1.5;
 }
 
 .cta-final__text {
   font-size: 15px;
   line-height: 1.9;
-<<<<<<< HEAD
   margin-bottom: 44px;
   color: rgba(255,255,255,0.65);
-=======
-  margin-bottom: 36px;
-  color: rgba(255,255,255,0.8);
->>>>>>> d8d7168 (first commit)
 }
 
 .cta-final__actions {
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
   gap: 16px;
   justify-content: center;
   margin-bottom: 28px;
-=======
-  gap: 14px;
-  justify-content: center;
-  margin-bottom: 24px;
->>>>>>> d8d7168 (first commit)
 }
 
 .cta-final__sub {
   font-size: 13px;
-<<<<<<< HEAD
   color: rgba(255,255,255,0.4);
 }
 .cta-final__sub a {
@@ -893,16 +609,6 @@
   text-underline-offset: 3px;
 }
 .cta-final__sub a:hover { color: var(--gold-light); opacity: 1; }
-=======
-  color: rgba(255,255,255,0.55);
-}
-.cta-final__sub a {
-  color: rgba(255,255,255,0.7);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.cta-final__sub a:hover { color: #fff; opacity: 1; }
->>>>>>> d8d7168 (first commit)
 
 /* =========================
    ACCESS
@@ -918,7 +624,6 @@
   font-family: "Noto Serif JP", serif;
   font-size: 19px;
   margin-bottom: 16px;
-<<<<<<< HEAD
   color: var(--main-navy);
 }
 
@@ -935,19 +640,6 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0,0,0,0.06);
-=======
-}
-
-.access-info a {
-  color: var(--color-green-dark);
-  font-weight: 600;
-}
-
-.access-map {
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
->>>>>>> d8d7168 (first commit)
   min-height: 300px;
 }
 
@@ -958,15 +650,9 @@
   position: fixed;
   bottom: 0; left: 0; right: 0;
   z-index: 90;
-<<<<<<< HEAD
   background: var(--warm-soft);
   border-top: 1px solid rgba(0,0,0,0.05);
   box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
-=======
-  background: #fff;
-  border-top: 1px solid var(--color-border);
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
->>>>>>> d8d7168 (first commit)
   padding: 12px 0;
 }
 
@@ -975,30 +661,20 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-<<<<<<< HEAD
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
-=======
-  width: min(1100px, 100% - 48px);
-  margin: 0 auto;
->>>>>>> d8d7168 (first commit)
 }
 
 .fixed-cta__text {
   font-size: 13px;
-<<<<<<< HEAD
   color: var(--text-dark);
-=======
-  color: var(--color-text);
->>>>>>> d8d7168 (first commit)
   font-weight: 600;
 }
 
 .fixed-cta__actions { display: flex; gap: 8px; }
 
 /* =========================
-<<<<<<< HEAD
    FLOATING LINE (公式色)
    ========================= */
 .cta-group {
@@ -1058,10 +734,6 @@
   background-color: #05b74a !important;
 }
 
-=======
-   FLOATING LINE
-   ========================= */
->>>>>>> d8d7168 (first commit)
 .floating-line {
   position: fixed;
   right: 20px;
@@ -1069,7 +741,6 @@
   z-index: 80;
   display: inline-flex;
   align-items: center;
-<<<<<<< HEAD
   gap: 6px;
   background-color: #06C755;
   color: var(--white);
@@ -1106,48 +777,16 @@ a.line-button:not(.floating-line) {
   padding: 80px 0 60px;
   text-align: center;
   border-bottom: 1px solid var(--border-color);
-=======
-  background: #06c755;
-  color: #fff;
-  border-radius: 999px;
-  padding: 12px 22px;
-  font-size: 13px;
-  font-weight: 700;
-  box-shadow: 0 4px 14px rgba(6,199,85,0.3);
-  transition: all 0.25s ease;
-}
-.floating-line:hover {
-  background: #05b34c;
-  transform: translateY(-2px);
-  opacity: 1;
-}
-
-/* =========================
-   PAGE HEADER / BREADCRUMB / FORM
-   (sub-pages — keep from prev)
-   ========================= */
-.page-header {
-  background: var(--color-bg-alt);
-  padding: 80px 0 60px;
-  text-align: center;
->>>>>>> d8d7168 (first commit)
 }
 .page-header__title {
   font-family: "Noto Serif JP", serif;
   font-size: clamp(26px, 3.5vw, 34px);
   margin-bottom: 12px;
-<<<<<<< HEAD
   color: var(--main-navy);
 }
 .page-header__lead {
   font-size: 15px;
   color: var(--text-mid);
-=======
-}
-.page-header__lead {
-  font-size: 15px;
-  color: var(--color-text-light);
->>>>>>> d8d7168 (first commit)
   max-width: 700px;
   margin: 0 auto;
 }
@@ -1155,30 +794,18 @@ a.line-button:not(.floating-line) {
 .form-wrapper {
   max-width: 700px;
   margin: 0 auto;
-<<<<<<< HEAD
   background: var(--white);
   border-radius: 16px;
   padding: 48px;
   box-shadow: 0 30px 60px rgba(0,0,0,0.06);
   border: 1px solid var(--border-color);
-=======
-  background: #fff;
-  border-radius: 8px;
-  padding: 48px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-  border: 1px solid var(--color-border);
->>>>>>> d8d7168 (first commit)
 }
 .form-group { margin-bottom: 24px; }
 .form-label {
   display: block;
   font-size: 14px;
   font-weight: 600;
-<<<<<<< HEAD
   color: var(--text-dark);
-=======
-  color: var(--color-text);
->>>>>>> d8d7168 (first commit)
   margin-bottom: 8px;
 }
 .form-label .required {
@@ -1193,15 +820,9 @@ a.line-button:not(.floating-line) {
   padding: 12px 16px;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 15px;
-<<<<<<< HEAD
   color: var(--text-dark);
   background: var(--white);
   border: 1px solid var(--border-color);
-=======
-  color: var(--color-text);
-  background: #fff;
-  border: 1px solid var(--color-border);
->>>>>>> d8d7168 (first commit)
   border-radius: 8px;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -1209,13 +830,8 @@ a.line-button:not(.floating-line) {
 .form-input:focus,
 .form-select:focus,
 .form-textarea:focus {
-<<<<<<< HEAD
   border-color: var(--main-navy);
   box-shadow: 0 0 0 3px rgba(15,28,46,0.08);
-=======
-  border-color: var(--color-green-dark);
-  box-shadow: 0 0 0 3px rgba(26,77,62,0.1);
->>>>>>> d8d7168 (first commit)
 }
 .form-input.is-error { border-color: #c0392b; }
 .form-error { font-size: 13px; color: #c0392b; margin-top: 6px; display: none; }
@@ -1232,7 +848,6 @@ a.line-button:not(.floating-line) {
   .site-footer__main { grid-template-columns: 1fr; gap: 32px; }
   .greeting-row { grid-template-columns: 1fr; gap: 40px; }
   .access-grid { grid-template-columns: 1fr; }
-<<<<<<< HEAD
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
   .menu-item--large .menu-item__image--feature { width: 260px; min-width: 260px; }
 }
@@ -1321,57 +936,4 @@ a.line-button:not(.floating-line) {
 
   .form-row { grid-template-columns: 1fr; }
   .form-wrapper { padding: 24px 16px; }
-=======
-  .menu-scroll { grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (max-width: 768px) {
-  .hero { min-height: 90vh; }
-  .hero__badge { top: 14px; right: 14px; font-size: 12px; padding: 6px 14px; }
-  .hero__content { padding: 120px 0 60px; }
-  .hero__actions { flex-direction: column; align-items: stretch; }
-
-  .concept-intro { padding: 80px 0; }
-
-  .principles { grid-template-columns: 1fr; gap: 40px; }
-
-  .greeting-row {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    text-align: center;
-  }
-  .greeting-row__image { max-width: 280px; margin: 0 auto; }
-  .greeting-row__body { max-width: 100%; }
-
-  .menu-scroll {
-    grid-template-columns: none;
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 14px;
-    padding-bottom: 8px;
-    -webkit-overflow-scrolling: touch;
-  }
-  .menu-scroll > * {
-    min-width: 240px;
-    scroll-snap-align: start;
-  }
-
-  .emotional-banner { min-height: 320px; }
-
-  .community-grid { grid-template-columns: 1fr; }
-
-  .cta-final__actions {
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 300px;
-    margin: 0 auto 24px;
-  }
-
-  .fixed-cta__inner { flex-direction: column; gap: 8px; }
-  .floating-line { right: 14px; bottom: 72px; padding: 10px 18px; font-size: 12px; }
-
-  .form-row { grid-template-columns: 1fr; }
-  .form-wrapper { padding: 28px 18px; }
->>>>>>> d8d7168 (first commit)
 }
