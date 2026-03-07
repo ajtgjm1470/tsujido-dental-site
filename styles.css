@@ -45,6 +45,7 @@ table {
 /* =========================
    Layout helpers
    ========================= */
+<<<<<<< HEAD
 /* ====== LAYOUT RESET ====== */
 .site-wrapper {
   width: 100%;
@@ -74,6 +75,19 @@ table {
 .text-block {
   max-width: 760px;
   margin: 0 auto;
+=======
+.container {
+  width: min(1120px, 100% - 40px);
+  margin-inline: auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section--pale {
+  background-color: #f3f7f5;
+>>>>>>> d8d7168 (first commit)
 }
 
 .section__header {
@@ -860,12 +874,16 @@ table {
 
 @media (max-width: 640px) {
   .section {
+<<<<<<< HEAD
     padding: 80px 0;
   }
 
   .wide-container,
   .container {
     padding: 0 20px;
+=======
+    padding: 60px 0;
+>>>>>>> d8d7168 (first commit)
   }
 
   .section-title {
@@ -913,6 +931,7 @@ table {
   }
 }
 
+<<<<<<< HEAD
 /* ===== Top Page Brand Refinement ===== */
 main,
 html,
@@ -2083,3 +2102,39 @@ small,
     width: 90%;
   }
 }
+=======
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  background: rgba(31, 63, 54, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+>>>>>>> d8d7168 (first commit)

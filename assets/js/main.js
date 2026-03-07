@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("is-active");
     }
   });
+<<<<<<< HEAD
 
   // モバイル: ハンバーガー + ドロワー
   const mobileBp = 768;
@@ -122,4 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+=======
+>>>>>>> d8d7168 (first commit)
 });
