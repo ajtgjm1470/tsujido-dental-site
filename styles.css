@@ -257,7 +257,7 @@ table {
 .hero__image {
   position: absolute;
   inset: 0;
-  background-image: url("./images/hero-dental.jpg");
+  background-image: url("/tsujido-dental-site/assets/images/hero-dental.jpg");
   background-size: cover;
   background-position: center;
   filter: saturate(1.1);
