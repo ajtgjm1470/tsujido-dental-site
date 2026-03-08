@@ -90,7 +90,7 @@ a:hover {
   --color-gray-light: #999999;
   --color-gray-pale: #f0f0ef;
   --color-accent: #c9a96e;
- (first commit)
+ 
 }
 
 /* =========================
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.45;
   letter-spacing: 0.03em;
   color: var(--color-text);
- (first commit)
+ 
 }
 
 h1 { font-size: clamp(28px, 4.5vw, 44px); }
@@ -126,7 +126,7 @@ p {
 =======
   line-height: 1.9;
   color: var(--color-text-light);
- (first commit)
+ 
 }
 
 p:last-child { margin-bottom: 0; }
@@ -148,7 +148,7 @@ p:last-child { margin-bottom: 0; }
 .container {
   width: min(1100px, 100% - 48px);
   margin-inline: auto;
- (first commit)
+ 
 }
 
 .section {
@@ -188,7 +188,7 @@ p:last-child { margin-bottom: 0; }
 .section--beige { background-color: var(--color-beige); }
 .section--menu  { background-color: var(--color-bg-menu); }
 .section--white { background-color: var(--color-white); }
- (first commit)
+ 
 
 .section-header {
   text-align: center;
@@ -211,7 +211,7 @@ p:last-child { margin-bottom: 0; }
   text-transform: uppercase;
   color: var(--color-warm);
   font-weight: 600;
- (first commit)
+ 
   margin-bottom: 14px;
 }
 
@@ -234,7 +234,7 @@ p:last-child { margin-bottom: 0; }
   background: var(--gold-accent);
   margin: 12px auto 0;
 =======
- (first commit)
+ 
 }
 
 .section-lead {
@@ -249,7 +249,7 @@ p:last-child { margin-bottom: 0; }
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.95;
- (first commit)
+ 
 }
 
 /* =========================
@@ -287,7 +287,7 @@ p:last-child { margin-bottom: 0; }
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
- (first commit)
+ 
   opacity: 1;
 }
 
@@ -346,7 +346,7 @@ p:last-child { margin-bottom: 0; }
 .btn--outline:hover {
   border-color: var(--color-green-dark);
   color: var(--color-green-dark);
- (first commit)
+ 
 }
 
 .btn--outline-white {
@@ -411,7 +411,7 @@ p:last-child { margin-bottom: 0; }
 
 .btn--sm { padding: 10px 22px; font-size: 13px; }
 .btn--lg { padding: 18px 40px; font-size: 16px; }
- (first commit)
+ 
 
 .btn .icon { flex-shrink: 0; }
 
@@ -440,7 +440,7 @@ p:last-child { margin-bottom: 0; }
 }
 .card:hover {
   box-shadow: 0 6px 20px rgba(0,0,0,0.07);
- (first commit)
+ 
 }
 
 .card--visual {
@@ -459,7 +459,7 @@ p:last-child { margin-bottom: 0; }
 }
 .card--visual .card__title { padding-top: 16px; }
 .card--visual .card__text:last-child { padding-bottom: 20px; }
- (first commit)
+ 
 
 .card__image {
   width: 100%;
@@ -475,7 +475,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--main-navy);
 =======
   color: var(--color-text);
- (first commit)
+ 
 }
 
 .card__text {
@@ -484,7 +484,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--text-mid);
 =======
   color: var(--color-text-light);
- (first commit)
+ 
   line-height: 1.8;
 }
 
@@ -594,7 +594,7 @@ p:last-child { margin-bottom: 0; }
 
 /* =========================
 =======
- (first commit)
+ 
    Scroll Animation
    ========================= */
 [data-scroll] {
@@ -922,4 +922,4 @@ p:last-child { margin-bottom: 0; }
   .grid--3, .grid--2 { grid-template-columns: 1fr; }
   .card { padding: 20px; }
 }
- (first commit)
+ 
