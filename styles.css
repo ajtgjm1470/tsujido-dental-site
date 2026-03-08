@@ -271,7 +271,7 @@ table {
   inset: 0;
   background: radial-gradient(
       circle at top left,
-      rgba(200, 233, 220, 0.7),
+      rgba(200, 233, 220, 0.25),
       transparent 55%
     ),
     linear-gradient(
