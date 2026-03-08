@@ -999,7 +999,7 @@ section {
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url("assets/images/hero-matiaisitutop.jpg");
+  background-image: url("/tsujido-dental-site/assets/images/hero-matiaisitutop.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
