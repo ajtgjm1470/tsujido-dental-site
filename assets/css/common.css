@@ -1,4 +1,6 @@
+/* =========================
    Base & Reset
+   ========================= */
 *,
 *::before,
 *::after {
@@ -12,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
   background-color: var(--warm-base);
   color: var(--text-dark);
   line-height: 1.8;
@@ -34,10 +36,18 @@ a {
 
 a:hover {
   opacity: 0.85;
+  transition: opacity 0.2s ease;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
+/* =========================
    Color Tokens
+   ========================= */
 :root {
+ HEAD
   --main-navy: #0f1c2e;
   --deep-navy: #0b1523;
   --sub-navy: #16263f;
@@ -51,16 +61,56 @@ a:hover {
   --text-light: #888888;
   --border-color: #ddd9d1;
   --white: #ffffff;
+=======
+  --color-green-dark: #1a4d3e;
+  --color-green: #2d6b5a;
+  --color-green-light: #4a8b78;
+  --color-green-pale: #e8f0ed;
+
+  --color-warm: #c9a96e;
+  --color-warm-light: #e8d5b0;
+
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f7f4;
+  --color-bg-menu: #eef1ec;
+
+  --color-beige: #f5f0ea;
+  --color-border: #e6e6e4;
+
+  --color-text: #2a2a2a;
+  --color-text-light: #5a5a5a;
+  --color-text-muted: #999999;
+
+  --color-white: #ffffff;
+  --color-black: #1a1a1a;
+
+  /* Legacy aliases for subpages */
+  --color-gray-dark: #2a2a2a;
+  --color-gray: #5a5a5a;
+  --color-gray-light: #999999;
+  --color-gray-pale: #f0f0ef;
+  --color-accent: #c9a96e;
+ (first commit)
 }
 
+/* =========================
    Typography
+   ========================= */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+ HEAD
   font-family: "Noto Serif JP", serif;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.05em;
   color: var(--main-navy);
+=======
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+ (first commit)
 }
 
 h1 { font-size: clamp(28px, 4.5vw, 44px); }
@@ -70,13 +120,21 @@ h3 { font-size: clamp(17px, 2vw, 21px); }
 p {
   margin: 0 0 1.2em;
   font-size: 15px;
+ HEAD
   line-height: 1.8;
   color: var(--text-mid);
+=======
+  line-height: 1.9;
+  color: var(--color-text-light);
+ (first commit)
 }
 
 p:last-child { margin-bottom: 0; }
 
+/* =========================
    Layout
+   ========================= */
+ HEAD
 .site-wrapper {
   width: 100%;
 }
@@ -86,12 +144,18 @@ p:last-child { margin-bottom: 0; }
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
+=======
+.container {
+  width: min(1100px, 100% - 48px);
+  margin-inline: auto;
+ (first commit)
 }
 
 .section {
   padding: 120px 0;
 }
 
+ HEAD
 .section-light { background-color: var(--white); }
 .section-soft  { background-color: #f3f2ef; }
 .section-dark  { background-color: #0f1a24; color: var(--white); }
@@ -119,6 +183,12 @@ p:last-child { margin-bottom: 0; }
   max-width: 760px;
   margin: 0 auto;
 }
+=======
+.section--alt   { background-color: var(--color-bg-alt); }
+.section--beige { background-color: var(--color-beige); }
+.section--menu  { background-color: var(--color-bg-menu); }
+.section--white { background-color: var(--color-white); }
+ (first commit)
 
 .section-header {
   text-align: center;
@@ -127,12 +197,21 @@ p:last-child { margin-bottom: 0; }
 
 .section-label {
   display: inline-block;
+ HEAD
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: 13px;
   letter-spacing: 0.18em;
   color: var(--gold-accent);
   font-weight: 400;
+=======
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-warm);
+  font-weight: 600;
+ (first commit)
   margin-bottom: 14px;
 }
 
@@ -140,6 +219,7 @@ p:last-child { margin-bottom: 0; }
   font-size: clamp(22px, 3vw, 30px);
   margin-bottom: 18px;
   font-weight: 700;
+ HEAD
   display: inline-block;
   border-bottom: none;
   padding-bottom: 0;
@@ -153,22 +233,34 @@ p:last-child { margin-bottom: 0; }
   height: 2px;
   background: var(--gold-accent);
   margin: 12px auto 0;
+=======
+ (first commit)
 }
 
 .section-lead {
   font-size: 15px;
+ HEAD
   color: var(--text-mid);
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.8;
+=======
+  color: var(--color-text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.95;
+ (first commit)
 }
 
+/* =========================
    Buttons
+   ========================= */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+ HEAD
   font-family: "Noto Sans JP", sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -179,10 +271,28 @@ p:last-child { margin-bottom: 0; }
 }
 
 .btn:hover {
+=======
+  border-radius: 999px;
+  padding: 14px 32px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  letter-spacing: 0.03em;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+ (first commit)
   opacity: 1;
 }
 
 .btn--primary {
+ HEAD
   background-color: #1f3d35;
   color: var(--white);
   border-radius: 50px;
@@ -217,10 +327,31 @@ p:last-child { margin-bottom: 0; }
   border: 1px solid var(--border-color);
   border-radius: 50px;
   padding: 14px 28px;
+=======
+  background: var(--color-green-dark);
+  color: var(--color-white);
+  border-color: var(--color-green-dark);
+}
+.btn--primary:hover {
+  background: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+  box-shadow: none;
+}
+.btn--outline:hover {
+  border-color: var(--color-green-dark);
+  color: var(--color-green-dark);
+ (first commit)
 }
 
 .btn--outline-white {
   background: transparent;
+ HEAD
   color: var(--white);
   border: 2px solid rgba(255,255,255,0.5);
   border-radius: 50px;
@@ -261,11 +392,34 @@ p:last-child { margin-bottom: 0; }
   font-size: 18px;
   text-align: center;
 }
+=======
+  color: var(--color-white);
+  border: 2px solid rgba(255,255,255,0.5);
+  box-shadow: none;
+}
+.btn--outline-white:hover {
+  background: var(--color-white);
+  color: var(--color-text);
+  border-color: var(--color-white);
+}
+
+.btn--ghost {
+  background: rgba(255,255,255,0.95);
+  color: var(--color-text);
+  border-color: transparent;
+}
+
+.btn--sm { padding: 10px 22px; font-size: 13px; }
+.btn--lg { padding: 18px 40px; font-size: 16px; }
+ (first commit)
 
 .btn .icon { flex-shrink: 0; }
 
+/* =========================
    Cards
+   ========================= */
 .card {
+ HEAD
   background: var(--white);
   border-radius: 16px;
   padding: 50px;
@@ -276,6 +430,17 @@ p:last-child { margin-bottom: 0; }
 .card:hover {
   box-shadow: 0 48px 90px rgba(0,0,0,0.09);
   transform: translateY(-3px);
+=======
+  background: var(--color-white);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border: 1px solid var(--color-border);
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+ (first commit)
 }
 
 .card--visual {
@@ -284,10 +449,17 @@ p:last-child { margin-bottom: 0; }
 }
 .card--visual .card__title,
 .card--visual .card__text {
+ HEAD
   padding: 0 24px;
 }
 .card--visual .card__title { padding-top: 20px; }
 .card--visual .card__text:last-child { padding-bottom: 24px; }
+=======
+  padding: 0 20px;
+}
+.card--visual .card__title { padding-top: 16px; }
+.card--visual .card__text:last-child { padding-bottom: 20px; }
+ (first commit)
 
 .card__image {
   width: 100%;
@@ -299,25 +471,40 @@ p:last-child { margin-bottom: 0; }
   font-family: "Noto Serif JP", serif;
   font-size: 17px;
   margin-bottom: 8px;
+ HEAD
   color: var(--main-navy);
+=======
+  color: var(--color-text);
+ (first commit)
 }
 
 .card__text {
   font-size: 13px;
+ HEAD
   color: var(--text-mid);
+=======
+  color: var(--color-text-light);
+ (first commit)
   line-height: 1.8;
 }
 
+/* =========================
    Grid
+   ========================= */
 .grid { display: grid; gap: 24px; }
 .grid--2 { grid-template-columns: repeat(2, 1fr); }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
 
+/* =========================
    Utilities
+   ========================= */
 .text-center { text-align: center; }
 .section-cta { text-align: center; margin-top: 48px; }
 
+/* =========================
+ HEAD
    Brand Message
+   ========================= */
 .brand-message {
   position: relative;
   background: linear-gradient(180deg, #f6f6f4 0%, #ffffff 100%);
@@ -405,7 +592,11 @@ p:last-child { margin-bottom: 0; }
   .brand-text .strong { font-size: 17px; padding-left: 12px; }
 }
 
+/* =========================
+=======
+ (first commit)
    Scroll Animation
+   ========================= */
 [data-scroll] {
   opacity: 0;
   transform: translateY(20px);
@@ -416,13 +607,16 @@ p:last-child { margin-bottom: 0; }
   transform: translateY(0);
 }
 
+/* =========================
    Responsive
+   ========================= */
 @media (max-width: 1024px) {
   .section { padding: 80px 0; }
   .grid--3 { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
+ HEAD
   .section { padding: 80px 0; }
   .container,
   .wide-container { padding: 0 20px; }
@@ -451,7 +645,9 @@ p:last-child { margin-bottom: 0; }
     font-size: 13px;
   }
 }
+/* =========================
    Principles / First Visit
+   ========================= */
 .principles-section {
   background: linear-gradient(to bottom, #f5f5f3, #ffffff);
   padding: 100px 20px;
@@ -531,7 +727,9 @@ p:last-child { margin-bottom: 0; }
   color: rgba(255,255,255,0.92);
 }
 
+/* =========================
    Top Structure Reset
+   ========================= */
 .hero-section {
   background: #f3f2ef;
   padding: 120px 0;
@@ -618,7 +816,9 @@ p:last-child { margin-bottom: 0; }
   }
 }
 
+/* =========================
    Philosophy Page
+   ========================= */
 .philosophy-narrow {
   max-width: 820px;
 }
@@ -716,3 +916,10 @@ p:last-child { margin-bottom: 0; }
     margin: 0 auto;
   }
 }
+=======
+  .section { padding: 64px 0; }
+  .container { width: min(100%, 100% - 32px); }
+  .grid--3, .grid--2 { grid-template-columns: 1fr; }
+  .card { padding: 20px; }
+}
+ (first commit)
