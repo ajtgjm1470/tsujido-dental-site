@@ -70,7 +70,7 @@ tsujido-dental-site/
 
 1. 画像ファイルを配置
    - `assets/images/hero/main.jpg` - ヒーロー画像
-   - `assets/images/doctor/doctor.jpg` - 院長写真
+   - `assets/images/hero-drkr.jpg` - 院長写真
    - `assets/images/clinic/` - 医院外観など
 
 2. 連絡先情報を更新
