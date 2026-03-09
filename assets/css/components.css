@@ -189,7 +189,7 @@
    HERO (Navy overlay)
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
   color: var(--white);
   overflow: hidden;
 }
@@ -826,7 +826,7 @@ a.line-button:not(.floating-line) {
   .site-header__actions .btn { width: auto; }
   .site-header .btn--primary { padding: 16px 28px; font-size: 15px; }
 
-  .hero { min-height: 90vh; }
+  .hero { min-height: 70vh; }
   .hero__badge { top: 14px; right: 14px; font-size: 12px; padding: 6px 14px; }
   .hero__content { padding: 100px 16px 60px; }
   .hero__title { font-size: 28px; line-height: 1.4; }
